@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Playlist Adder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Spotify Playlist Adder</h1>
+      <p>Manage Spotify playlists effortlessly using Terraform!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container">
+        <h2>About the Project</h2>
+        <p>This project demonstrates how to automate playlist management on Spotify using Terraform. Add, remove, or customize playlists programmatically.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <ul>
+          <li>Automate Spotify playlist creation.</li>
+          <li>Programmatically add songs to playlists.</li>
+          <li>Leverage Terraform for scalable configuration.</li>
+          <li>Easy integration with Spotify API.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="add-playlist">
+      <div class="container">
+        <h2>Add a Playlist</h2>
+        <form id="playlist-form" action="http://localhost:3000/add-playlist" method="POST">
+            <label for="playlist-name">Playlist Name:</label>
+            <input type="text" id="playlist-name" name="playlistName" placeholder="Enter playlist name" required>
+          
+            <label for="track-id">Track ID:</label>
+            <input type="text" id="track-id" name="trackId" placeholder="Enter track ID" required>
+          
+            <label for="visibility">Visibility:</label>
+            <select id="visibility" name="visibility" required>
+              <option value="public">Public</option>
+              <option value="private">Private</option>
+            </select>
+          
+            <button type="submit">Add Playlist</button>
+          </form>
+          
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Spotify Playlist Adder Project | Built with ❤️ for cloud computing enthusiasts.</p>
+    </div>
+  </footer>
+</body>
+</html>
